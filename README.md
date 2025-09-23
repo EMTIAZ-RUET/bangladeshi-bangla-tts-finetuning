@@ -127,10 +127,8 @@ bangladeshi-bangla-tts-finetuning/
 │   ├── 02-pruning/                       # Model pruning techniques
 │   ├── 03-caching-streaming/             # Caching and streaming optimization
 │   └── 04-batching-padding/              # Batching and padding optimization
-├── 06-Final Evaluation & Documentation/
-│   ├── comprehensive-evaluation/          # Final model evaluation
-│   ├── deployment-planning/               # Deployment architecture and planning
-│   └── final-documentation/               # Technical reports and documentation
+├── 06-Deployment/                         # Deployment configurations and tools
+│   └── deployment-planning/               # Production deployment configurations and setup
 ├── .gitignore                             # Git ignore file
 └── README.md                              # This file
 ```
