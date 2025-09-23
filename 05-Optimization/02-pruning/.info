@@ -1,0 +1,9 @@
+# Model pruning optimization
+
+This folder contains:
+- Structured and unstructured pruning techniques
+- Weight magnitude-based pruning
+- Gradual pruning during training
+- Pruning sensitivity analysis
+- Model compression without quality loss
+- Sparse model optimization and evaluation

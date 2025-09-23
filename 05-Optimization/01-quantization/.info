@@ -1,0 +1,9 @@
+# Model quantization optimization
+
+This folder contains:
+- INT8 and FP16 quantization implementation
+- Dynamic quantization for inference speedup
+- Post-training quantization techniques
+- Quantization-aware training methods
+- Model size reduction and memory optimization
+- Performance benchmarking after quantization

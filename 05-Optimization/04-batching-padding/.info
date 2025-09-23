@@ -1,0 +1,9 @@
+# Batching and padding optimization
+
+This folder contains:
+- Dynamic batching for variable-length sequences
+- Smart padding strategies for efficiency
+- Batch size optimization for throughput
+- Memory-efficient batch processing
+- Sequence bucketing and grouping
+- Inference throughput optimization

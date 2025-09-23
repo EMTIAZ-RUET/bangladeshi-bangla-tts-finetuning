@@ -1,7 +1,0 @@
-# Model comparisons
-
-This folder contains:
-- Full evaluation on multiple checkpoints
-- Objective metrics comparison across experiments
-- Audio samples generation for qualitative assessment
-- Side-by-side comparison matrices creation
