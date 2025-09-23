@@ -1,24 +1,23 @@
 """
 Bangla Text Normalization Script for TTS Training Dataset
 
-This script performs comprehensive text cleaning and normalization on Bangla text data
-to prepare it for TTS model training. It handles numerical conversion, punctuation cleanup,
-Unicode standardization, and character normalization.
+This script performs text normalization on Bangla text data to prepare it for TTS model training.
+It handles numerical conversion and Unicode standardization while preserving all punctuation.
 
 Features:
     - Converts numbers to spoken Bangla form
-    - Standardizes punctuation and removes unwanted characters
     - Normalizes Unicode variations of Bangla characters
-    - Removes duplicated punctuation and extra whitespace
+    - Preserves all original punctuation marks
+    - Normalizes whitespace only
     - Validates text for TTS training compatibility
 
 Usage:
     1. Ensure your metadata file (metadata.txt or metadata1.txt) is in the same directory
-    2. Run the script to clean and normalize all text entries
+    2. Run the script to normalize all text entries
     3. Output will be saved to a new normalized metadata file
 
 Input Format: audio_id|original_text|normalized_text
-Output Format: audio_id|original_text|clean_normalized_text
+Output Format: audio_id|original_text|normalized_text_with_numbers_converted
 """
 
 import re
@@ -45,16 +44,6 @@ class BanglaTextNormalizer:
             'hundred': 'শত', 'thousand': 'হাজার', 'million': 'লক্ষ'
         }
         
-        # Valid Bangla characters (Unicode ranges)
-        self.valid_bangla_chars = set(
-            "অআইঈউঊঋএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহড়ঢ়য়"
-            "ংঃঁ্াািীুূৃেৈোৌ্"  # Vowel signs and modifiers
-            "০১২৩৪৫৬ে৮৯"  # Bangla numerals
-            "।?"  # Bangla punctuation
-        )
-        
-        # Common English punctuation to keep
-        self.valid_punctuation = set(".,!?;:()[]\"'-")
         
     def normalize_numbers(self, text):
         """Convert numeric digits and English number words to Bangla spoken form."""
@@ -69,31 +58,10 @@ class BanglaTextNormalizer:
         
         return text
     
-    def clean_punctuation(self, text):
-        """Standardize and clean punctuation marks."""
-        # Replace multiple consecutive punctuation marks with single ones
-        text = re.sub(r'[।]{2,}', '।', text)  # Multiple dari
-        text = re.sub(r'[?]{2,}', '?', text)   # Multiple question marks
-        text = re.sub(r'[!]{2,}', '!', text)   # Multiple exclamation marks
-        text = re.sub(r'[,]{2,}', ',', text)   # Multiple commas
-        text = re.sub(r'[.]{2,}', '.', text)   # Multiple periods
-        
-        # Remove unwanted characters but keep valid punctuation
-        # Keep only Bangla characters, English letters, numbers, and valid punctuation
-        cleaned_chars = []
-        for char in text:
-            if (char in self.valid_bangla_chars or 
-                char in self.valid_punctuation or
-                char.isspace() or
-                char.isalnum()):
-                cleaned_chars.append(char)
-        
-        text = ''.join(cleaned_chars)
-        
-        # Normalize spacing around punctuation
-        text = re.sub(r'\s*([।?!,.])\s*', r'\1 ', text)
+    def normalize_whitespace(self, text):
+        """Normalize whitespace without affecting punctuation."""
+        # Only clean up extra whitespace
         text = re.sub(r'\s+', ' ', text)  # Multiple spaces to single space
-        
         return text.strip()
     
     def normalize_unicode(self, text):
@@ -114,18 +82,10 @@ class BanglaTextNormalizer:
         
         return text
     
-    def remove_unwanted_chars(self, text):
-        """Remove emojis, foreign characters, and other unwanted symbols."""
-        # Remove emojis and other symbols
-        text = re.sub(r'[^\w\s।?!,.\'\":;()\[\]-]', '', text)
-        
-        # Remove any remaining non-Bangla, non-English characters
-        cleaned_text = re.sub(r'[^\u0980-\u09FF\u0020-\u007F।?]', ' ', text)
-        
-        # Clean up extra whitespace
-        cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
-        
-        return cleaned_text
+    def preserve_original_format(self, text):
+        """Preserve original text format without removing any characters."""
+        # Only clean up extra whitespace
+        return re.sub(r'\s+', ' ', text).strip()
     
     def validate_text(self, text):
         """Validate if text is suitable for TTS training."""
@@ -149,7 +109,7 @@ class BanglaTextNormalizer:
         return True, "Valid"
     
     def normalize_text(self, text):
-        """Apply all normalization steps to the text."""
+        """Apply normalization steps to the text while preserving punctuation."""
         if not text:
             return ""
         
@@ -159,11 +119,8 @@ class BanglaTextNormalizer:
         # Step 2: Convert numbers to spoken form
         text = self.normalize_numbers(text)
         
-        # Step 3: Clean punctuation
-        text = self.clean_punctuation(text)
-        
-        # Step 4: Remove unwanted characters
-        text = self.remove_unwanted_chars(text)
+        # Step 3: Normalize whitespace only (preserve all punctuation)
+        text = self.normalize_whitespace(text)
         
         return text
 
