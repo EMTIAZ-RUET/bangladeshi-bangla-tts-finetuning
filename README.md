@@ -1,13 +1,5 @@
 # Bangladeshi Bangla TTS Fine-Tuning Project
 
-## 🎧 **BEFORE vs AFTER: Listen to the Transformation!** 🎧
-
-> 🎵 **[▶️ LIVE AUDIO DEMO - Click Here for Embedded Audio Players](https://emtiaz-ruet.github.io/bangladeshi-bangla-tts-finetuning/)**  
-> **Perfect inline audio experience with embedded players!**
-
-> **The power of fine-tuning demonstrated through audio comparisons**  
-> Each problem shows the dramatic improvement achieved through our fine-tuning approach
-
 ### 🔊 **Problems Solved by Fine-Tuning - Audio Evidence**
 
 Our fine-tuning process has successfully addressed critical issues in Bangladeshi Bangla TTS. Compare the remarkable improvements in our side-by-side examples:
