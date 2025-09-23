@@ -1,0 +1,7 @@
+# Training experiments
+
+This folder contains:
+- Conservative training runs (very low LR: 1e-6)
+- GPU memory usage and training stability monitoring
+- 1-2 hours training sessions with frequent validation
+- Sample generation every 200-500 steps

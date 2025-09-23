@@ -1,0 +1,7 @@
+# Environment configuration files
+
+This folder contains:
+- Google Colab or Kaggle environment setup scripts
+- Core package installation configurations (torch, torchvision, torchaudio)
+- GPU availability and memory constraint testing scripts
+- Project folder structure and version control setup files
