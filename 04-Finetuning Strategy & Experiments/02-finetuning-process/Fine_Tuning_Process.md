@@ -149,17 +149,30 @@ The training process followed a systematic **loop of weight update → monitorin
 
 ### **Refinement Workflow**
 
-```mermaid
-graph LR
-    A[Training Stage] --> B[Loss Monitoring]
-    B --> C[Audio Evaluation] 
-    C --> D{Quality Assessment}
-    D -->|Satisfactory| E[Next Stage]
-    D -->|Issues Detected| F[Parameter Adjustment]
-    F --> A
-    E --> G{Final Stage?}
-    G -->|No| A
-    G -->|Yes| H[Model Deployment]
+```
+TRAINING CYCLE WORKFLOW:
+
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│  Training Stage │───▶│  Loss Monitoring │───▶│ Audio Evaluation │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+          ▲                                              │
+          │                                              ▼
+┌─────────────────┐                            ┌─────────────────┐
+│ Parameter       │                            │ Quality         │
+│ Adjustment      │◀───────────────────────────│ Assessment      │
+└─────────────────┘                            └─────────────────┘
+          │                Issues Detected              │ Satisfactory
+          │                                              ▼
+          │                                    ┌─────────────────┐
+          └────────────────────────────────────│   Next Stage    │
+                                               └─────────────────┘
+                                                        │
+                                                        ▼
+                                               ┌─────────────────┐
+                                               │ Final Stage?    │
+                                               │ No: Loop Back   │
+                                               │ Yes: Deployment │
+                                               └─────────────────┘
 ```
 
 ### **Intervention Strategies**
