@@ -32,12 +32,12 @@ import shutil
 from pathlib import Path
 
 class AudioCleaner:
-    def __init__(self, target_sr=24000, max_duration=20.0, min_duration=1.0):
+    def __init__(self, target_sr=22050, max_duration=20.0, min_duration=1.0):
         """
         Initialize AudioCleaner with processing parameters.
         
         Args:
-            target_sr: Target sample rate (24kHz for TTS)
+            target_sr: Target sample rate (22050Hz for TTS)
             max_duration: Maximum duration in seconds (20s for stability)
             min_duration: Minimum duration in seconds (1s minimum)
         """
@@ -359,7 +359,7 @@ def main():
     print(f"Input metadata file: {metadata_file}")
     print(f"Output audio directory: {output_dir}")
     print(f"Output metadata file: {output_metadata}")
-    print(f"Target sample rate: 24000 Hz")
+    print(f"Target sample rate: 22050 Hz")
     print(f"Max audio duration: 20.0 seconds")
     print(f"Min audio duration: 1.0 seconds")
     print("="*40)

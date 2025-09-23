@@ -59,7 +59,7 @@ with open("testMetaData.txt", 'r', encoding='utf-8') as file:
                 },
                 "audioConfig": {
                     "audioEncoding": "LINEAR16",
-                    "sampleRateHertz": 24000
+                    "sampleRateHertz": 22050
                 }
             }
 

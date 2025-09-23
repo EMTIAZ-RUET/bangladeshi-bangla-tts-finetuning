@@ -8,7 +8,7 @@ To ensure the dataset was consistent, clean, and ready for fine-tuning, I applie
 
 * **Sampling Rate Adjustment**
 
-  * All audio files were resampled to **24 kHz**, which strikes a balance between **speech quality** and **GPU memory constraints**.
+  * All audio files were resampled to **22.05 kHz**, which strikes a balance between **speech quality** and **GPU memory constraints**.
   * This ensured uniformity across both the OpenSLR Bangla recordings and the Google TTS Zephyr synthetic audio.
 
 * **Audio Length Trimming**
