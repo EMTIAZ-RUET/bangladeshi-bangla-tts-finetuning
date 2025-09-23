@@ -1,0 +1,7 @@
+# Advanced training runs
+
+This folder contains:
+- Optimized training with better hyperparameters
+- Curriculum learning implementation (easy to hard samples)
+- Longer training sessions (2-3 hours)
+- Careful convergence monitoring

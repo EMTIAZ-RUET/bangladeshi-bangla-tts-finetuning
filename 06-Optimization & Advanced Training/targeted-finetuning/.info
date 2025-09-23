@@ -1,0 +1,7 @@
+# Specialized fine-tuning
+
+This folder contains:
+- Specific pronunciation issues identification
+- Targeted data filtering/augmentation implementation
+- Specialized training runs for problem areas
+- Different vocoder fine-tuning strategies testing

@@ -1,0 +1,7 @@
+# Model architecture studies
+
+This folder contains:
+- XTTS v2 checkpoint downloads and analysis
+- Model inputs/outputs and tokenizer behavior documentation
+- Basic inference testing with English/multilingual samples
+- Architecture details and memory requirements documentation

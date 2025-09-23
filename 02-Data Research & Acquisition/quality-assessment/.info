@@ -1,0 +1,7 @@
+# Data quality analysis
+
+This folder contains:
+- Audio quality, noise levels, and speaker diversity analysis
+- Text normalization requirements assessment
+- Bangladeshi vs Indian accent sample identification
+- Initial data filtering criteria development

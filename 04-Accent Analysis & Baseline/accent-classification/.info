@@ -1,0 +1,7 @@
+# Accent analysis tools
+
+This folder contains:
+- Clustering system for accent grouping
+- Bangladeshi vs Indian accent classifier
+- Accent similarity scoring implementation
+- Classification validation on known samples

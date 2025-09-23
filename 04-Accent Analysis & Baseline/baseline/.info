@@ -1,0 +1,7 @@
+# Baseline model testing
+
+This folder contains:
+- XTTS v2 checkpoint loading and baseline sample generation
+- Testing with Bangladeshi Bangla text samples
+- Baseline accent similarity evaluation
+- Current model limitations documentation

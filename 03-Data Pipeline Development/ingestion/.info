@@ -1,0 +1,7 @@
+# Data ingestion systems
+
+This folder contains:
+- Metadata extraction pipeline
+- Speaker ID tracking implementation
+- Data quality scoring system
+- Train/validation/test splits creation

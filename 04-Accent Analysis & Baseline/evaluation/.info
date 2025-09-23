@@ -1,0 +1,7 @@
+# Evaluation metrics and tools
+
+This folder contains:
+- Mel Cepstral Distortion (MCD) implementation
+- F0 correlation measurement tools
+- Speaker embedding distance metrics
+- Evaluation pipeline testing with baseline samples

@@ -1,0 +1,7 @@
+# Memory optimization strategies
+
+This folder contains:
+- Batch size 1-2 configuration for GPU constraints
+- Audio chunking/cropping strategies implementation
+- Efficient data loading pipeline setup
+- Training loop testing without actual training

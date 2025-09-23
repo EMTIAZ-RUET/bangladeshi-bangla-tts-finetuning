@@ -1,0 +1,7 @@
+# Training strategy improvements
+
+This folder contains:
+- First experiment results analysis
+- Learning rates, layer freezing, curriculum adjustments
+- Progressive unfreezing implementation if needed
+- Multiple parallel experiments planning

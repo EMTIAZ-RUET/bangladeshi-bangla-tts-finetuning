@@ -1,0 +1,9 @@
+# Audio and text preprocessing
+
+This folder contains:
+- Audio preprocessing: resampling, trimming, normalization scripts
+- Duration filtering (2-8 seconds optimal) implementation
+- Silence removal and audio cleaning functions
+- Text normalization: punctuation, numerals, English loanwords
+- Bangladeshi-specific text pattern handling
+- Phoneme mapping and text cleaning validation

@@ -1,0 +1,7 @@
+# Final model evaluation
+
+This folder contains:
+- Complete evaluation suite on best checkpoints
+- Final metrics comparison generation
+- Audio demonstration samples creation
+- Qualitative analysis of improvements
