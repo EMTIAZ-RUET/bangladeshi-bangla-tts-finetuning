@@ -15,65 +15,107 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 #### 1. **🗣️ Pronunciation Accuracy**
 **Text:** *অনুমোদিতভাবে ছুটি নেওয়া শৃঙ্খলাভঙ্গ হিসেবে গণ্য হয় এবং এধরনের আচরণের জন্য প্রশাসনিক ব্যবস্থা নেওয়া হতে পারে।*
 
-**🔴 Base Model (Before):** Poor pronunciation of complex Bangla words  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Pronounciation/base_model.mp3)**
+**🔴 Base Model (Before):** Poor pronunciation of complex Bangla words
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Pronounciation/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Clear, accurate pronunciation  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Pronounciation/fine_tuned.mp3)**
+**✅ Fine-tuned Model (After):** Clear, accurate pronunciation
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Pronounciation/fine_tuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 2. **❓ Statement vs Question Tone Recognition**
 **Text:** *তোমার জীবনের এমন একটি ঘটনা কি আছে যা তোমার চিন্তাধারা, বিশ্বাস বা ভবিষ্যৎ পরিকল্পনায় গভীর প্রভাব ফেলেছে?*
 
-**🔴 Base Model (Before):** Cannot distinguish question intonation  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/base_model.mp3)**
+**🔴 Base Model (Before):** Cannot distinguish question intonation
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Perfect question tone and inflection  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/fine_tuned.mp3)**
+**✅ Fine-tuned Model (After):** Perfect question tone and inflection
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/fine_tuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 3. **💬 Domain-Specific Conversational Tone**
 **Text:** *ছুটি গ্রহণের ক্ষেত্রে প্রত্যেক কর্মীরই উচিৎ প্রতিষ্ঠানের নির্ধারিত নিয়ম অনুসরণ করা এবং পূর্বানুমতি নিয়ে আবেদন করা।*
 
-**🔴 Base Model (Before):** Robotic, formal tone  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/base_model.mp3)**
+**🔴 Base Model (Before):** Robotic, formal tone
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Natural conversational flow  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/fine_tuned.mp3)**
+**✅ Fine-tuned Model (After):** Natural conversational flow
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/fine_tuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 4. **🔚 Sentence Ending Naturalness**
 **Text:** *সময়কে সম্মান করো, কারণ একবার হারিয়ে গেলে তা আর কখনো ফিরে আসে না।*
 
-**🔴 Base Model (Before):** Abrupt, unnatural endings  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/base_model.mp3)**
+**🔴 Base Model (Before):** Abrupt, unnatural endings
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Smooth, natural sentence completion  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/fine_tuned.mp3)**
+**✅ Fine-tuned Model (After):** Smooth, natural sentence completion
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/fine_tuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 5. **📊 Volume Consistency**
 **Text:** *জীবনে সফলতা অর্জন করতে হলে ধৈর্য এবং পরিশ্রমের কোনো বিকল্প নেই। প্রতিটি মানুষ নিজের পথে চলার সময় বিভিন্ন প্রতিবন্ধকতার সম্মুখীন হয়, তবে সেগুলি মোকাবিলা করার ক্ষমতা এবং মনোবলই একজন মানুষের প্রকৃত শক্তি।*
 
-**🔴 Base Model (Before):** Inconsistent volume levels  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/base_model.mp3)**
+**🔴 Base Model (Before):** Inconsistent volume levels
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Stable, consistent audio levels  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/output_100_epoch.mp3)**
+**✅ Fine-tuned Model (After):** Stable, consistent audio levels
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/output_100_epoch.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 6. **✂️ Word Cutting Issues**
 **Text:** *আমি গতকাল বিকেলে যখন বাসা থেকে বেরিয়ে বইমেলায় যাচ্ছিলাম, তখন হঠাৎ করে আকাশ মেঘে ঢেকে যায়।*
 
-**🔴 Base Model (Before):** Words cut off mid-sentence  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/base_model.mp3)**
+**🔴 Base Model (Before):** Words cut off mid-sentence
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Complete, uninterrupted speech  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/finetuned.mp3)**
+**✅ Fine-tuned Model (After):** Complete, uninterrupted speech
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/finetuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 #### 7. **📖 Continuous Reading Flow**
 **Text:** *যেকোনো সিদ্ধান্ত নেওয়ার আগে, চিন্তা করো, পরামর্শ নাও, ভেবেচিন্তে পদক্ষেপ নাও, এবং ফলাফল সম্পর্কে আগে থেকেই ধারণা রাখো।*
 
-**🔴 Base Model (Before):** Choppy, disconnected reading  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/continuos%20reading/base_model.mp3)**
+**🔴 Base Model (Before):** Choppy, disconnected reading
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/continuos%20reading/base_model.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-**✅ Fine-tuned Model (After):** Smooth, continuous narration  
-🎵 **[▶️ PLAY AUDIO](https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/continuos%20reading/fine_tuned.mp3)**
+**✅ Fine-tuned Model (After):** Smooth, continuous narration
+<audio controls style="width: 100%; max-width: 500px;">
+  <source src="https://github.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/raw/main/Proble%20resolved%20by%20finetuning/continuos%20reading/fine_tuned.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ### 🏆 **Transformation Summary**
 
