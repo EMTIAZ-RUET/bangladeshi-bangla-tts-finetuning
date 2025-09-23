@@ -1,8 +1,0 @@
-# Deployment architecture
-
-This folder contains:
-- ONNX export procedures research
-- FastAPI/Gradio inference service design
-- Latency and resource requirements calculation
-- Deployment architecture documentation
-- Inference pipeline testing with final model

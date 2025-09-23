@@ -1,9 +1,0 @@
-# Caching and streaming optimization
-
-This folder contains:
-- Model weights and activations caching strategies
-- KV-cache optimization for transformer models
-- Streaming inference implementation
-- Real-time audio generation optimization
-- Memory-efficient inference pipelines
-- Latency reduction techniques

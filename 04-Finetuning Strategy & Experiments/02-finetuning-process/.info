@@ -1,9 +1,0 @@
-# Fine-tuning process execution
-
-This folder contains:
-- Training script execution and monitoring
-- Checkpoint saving and model versioning
-- Training progress tracking and logging
-- GPU memory usage and performance monitoring
-- Validation runs during training process
-- Sample generation and quality checks during training

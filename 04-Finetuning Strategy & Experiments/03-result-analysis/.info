@@ -1,9 +1,0 @@
-# Training results analysis
-
-This folder contains:
-- Training metrics evaluation and visualization
-- Loss curves and convergence analysis
-- Model performance comparison across checkpoints
-- Audio quality assessment of generated samples
-- Accent similarity measurements and scoring
-- Training behavior documentation and insights
