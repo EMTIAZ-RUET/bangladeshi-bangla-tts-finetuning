@@ -14,14 +14,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Poor pronunciation of complex Bangla words
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Pronounciation/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Pronounciation/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Clear, accurate pronunciation
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Pronounciation/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Pronounciation/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/fine_tuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/fine_tuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 2. **❓ Statement vs Question Tone Recognition**
@@ -29,14 +31,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Cannot distinguish question intonation
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Perfect question tone and inflection
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 3. **💬 Domain-Specific Conversational Tone**
@@ -44,14 +48,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Robotic, formal tone
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Domain-specific conversational tone/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Natural conversational flow  
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 4. **🔚 Sentence Ending Naturalness**
@@ -59,14 +65,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Abrupt, unnatural endings
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Sentence ending Unnatural/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, natural sentence completion
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 5. **📊 Volume Consistency**
@@ -74,14 +82,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Inconsistent volume levels
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Stable, consistent audio levels
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 6. **✂️ Word Cutting Issues**
@@ -89,14 +99,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Words cut off mid-sentence
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Complete, uninterrupted speech
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 #### 7. **📖 Continuous Reading Flow**
@@ -104,14 +116,16 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **🔴 Base Model (Before):** Choppy, disconnected reading
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/continuos reading/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/continuos reading/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/base_model.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/base_model.mp3" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, continuous narration
 <audio controls preload="metadata">
+  <source src="Proble resolved by finetuning/continuos reading/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/continuos reading/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/fine_tuned.wav" target="_blank">Play audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/fine_tuned.mp3" target="_blank">Play audio</a>
 </audio>
 
 ### 🏆 **Transformation Summary**
