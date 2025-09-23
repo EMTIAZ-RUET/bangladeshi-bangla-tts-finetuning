@@ -1,7 +1,8 @@
 # Model Choice: VITS over XTTS
 
-For this assignment, I have chosen **VITS** instead of **XTTS**.
-While XTTS is a stronger architecture with advanced zero-shot multilingual capabilities, it is **not practical under the GPU and time constraints** of this task. Below I provide a detailed justification.
+There is currently **no publicly available pretrained Bangla XTTS model**, which makes immediate fine-tuning impractical without reproducing an extensive pretraining pipeline.
+
+For this assignment, I have chosen **VITS** instead of **XTTS**. While XTTS is a stronger architecture with advanced zero-shot multilingual capabilities, it is **not practical under the GPU and time constraints** of this task. Below I provide a detailed justification.
 
 ---
 
@@ -64,7 +65,7 @@ While XTTS is a stronger architecture with advanced zero-shot multilingual capab
 ## References
 
 1. **Assignment Instructions** – *AI/ML Engineer Assignment - TTS: Bangladeshi Bangla TTS Fine-Tuning*
-2. **BnTTS (Verbex.ai)** – *BnTTS: Few-Shot Speaker Adaptation in Low-Resource Setting* (2025):
+2. **BnTTS (Verbex.ai)** – *BnTTS: Few-Shot Speaker Adaptation in Low-Resource Setting* (2025) — [PDF in this repository](./2502.05729v1.pdf):
 
    * *"We continuously pre-trained the BnTTS model (initialized from the XTTS checkpoint) on **3.85k hours of Bengali speech data**..."*
    * *"All experiments are run on a **single NVIDIA A100 GPU with 80GB VRAM**."*
