@@ -271,25 +271,4 @@ The methodical approach employed in this fine-tuning process was designed to add
 
 ---
 
-## 7. Results & Outcomes
-
-The systematic fine-tuning process successfully achieved the primary objectives of adapting a pre-trained VITS model to Bangladeshi Bangla speech synthesis:
-
-### **Quantitative Improvements**
-- **Mel-Spectrogram Loss**: Reduced from 18.2 to 12.4 (32% improvement)
-- **Overall Loss Convergence**: Achieved stable training without mode collapse
-- **Training Efficiency**: Completed in ~160 epochs vs. typical 500+ for from-scratch training
-
-### **Qualitative Enhancements**
-- **Accent Accuracy**: Successfully captured Bangladeshi pronunciation patterns
-- **Speech Naturalness**: Achieved human-like prosody and intonation
-- **Audio Quality**: Maintained clarity while adapting accent characteristics
-
-### **Process Validation**
-- **Training Stability**: No mode collapse or catastrophic failures observed
-- **Reproducible Results**: Systematic approach enables replication
-- **Documentation Quality**: Comprehensive records for research transparency
-
----
-
 ✅ **This fine-tuning process demonstrates a professional, research-oriented approach that combines rigorous monitoring, systematic evaluation, and iterative refinement to achieve high-quality Bangladeshi Bangla TTS synthesis.**
