@@ -24,13 +24,13 @@ print(os.path.join(dirname, filename))
 /kaggle/input/100-th-epoch/__notebook__.ipynb
 /kaggle/input/100-th-epoch/__output__.json
 /kaggle/input/100-th-epoch/custom.css
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/config.json
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/checkpoint_877000.pth
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/train_tts.py
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/best_model.pth
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/best_model_862511.pth
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/events.out.tfevents.1746960153.e5db9382c602.135.0
-/kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/trainer_0_log.txt
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/config.json
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/checkpoint_877000.pth
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/train_tts.py
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/best_model.pth
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/best_model_862511.pth
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/events.out.tfevents.1746960153.e5db9382c602.135.0
+/kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/trainer_0_log.txt
 /kaggle/input/ttsbng/transformers/default/1/config.json
 /kaggle/input/datahrbn/MyTTSDataset/cleanEndline.py
 /kaggle/input/datahrbn/MyTTSDataset/outlier1.txt
@@ -5507,7 +5507,7 @@ Successfully installed TTS-0.22.0 anyascii-0.3.2 bangla-0.0.5 bnnumerizer-0.0.2 
 Note: you may need to restart the kernel to use updated packages.
 !CUDA_VISIBLE_DEVICES="0" python /kaggle/input/datahrbn/MyTTSDataset/train_tts.py \
 --config_path /kaggle/input/ttsbng/transformers/default/1/config.json \
---restore_path /kaggle/input/100-th-epoch/vits_4_nov-May-11-2025_10+42AM-0000000/checkpoint_877000.pth
+--restore_path /kaggle/input/100-th-epoch/vits_4_nov-Sep-23-2025_10+42AM-0000000/checkpoint_877000.pth
 | > Found 5089 files in /kaggle/input/datahrbn/MyTTSDataset
 > Using model: vits
 > Setting up Audio Processor...
