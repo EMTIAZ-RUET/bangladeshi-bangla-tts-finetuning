@@ -1,7 +1,0 @@
-# Training configurations
-
-This folder contains:
-- Layer freezing strategy design (freeze encoder, fine-tune decoder)
-- Learning rates configuration for different components
-- Gradient accumulation (4-8 steps) and mixed precision setup
-- Checkpoint saving to cloud storage implementation

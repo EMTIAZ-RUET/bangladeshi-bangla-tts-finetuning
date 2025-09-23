@@ -1,7 +1,0 @@
-# Results analysis and logging
-
-This folder contains:
-- First checkpoint evaluation with accent pipeline
-- Baseline metrics comparison
-- Training behavior and convergence documentation
-- Adjustments planning for next experiments

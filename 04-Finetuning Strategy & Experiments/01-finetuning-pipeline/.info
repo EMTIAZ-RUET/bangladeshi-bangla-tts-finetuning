@@ -1,0 +1,9 @@
+# Fine-tuning pipeline setup
+
+This folder contains:
+- Training configuration and hyperparameter setup
+- Layer freezing strategy implementation (freeze encoder, fine-tune decoder)
+- Learning rate scheduling and optimization configuration
+- Gradient accumulation and mixed precision setup
+- Memory optimization strategies for GPU constraints
+- Data loading pipeline and batch processing setup
