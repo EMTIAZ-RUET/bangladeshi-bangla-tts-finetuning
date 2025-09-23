@@ -1,7 +1,0 @@
-# Model selection process
-
-This folder contains:
-- Systematic comparison of all training experiments
-- Final model selection based on accent similarity and quality
-- Held-out test set validation
-- Selection rationale documentation
