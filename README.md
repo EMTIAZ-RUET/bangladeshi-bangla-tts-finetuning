@@ -16,14 +16,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Pronounciation/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Pronounciation/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Pronounciation/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Clear, accurate pronunciation
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Pronounciation/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Pronounciation/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/fine_tuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Pronounciation/fine_tuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 2. **❓ Statement vs Question Tone Recognition**
@@ -33,14 +33,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Perfect question tone and inflection
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Cannot%20distinguish%20between%20statement%20and%20question%20tone/fine_tuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 3. **💬 Domain-Specific Conversational Tone**
@@ -50,14 +50,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Natural conversational flow  
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Domain-specific%20conversational%20tone/fine_tuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 4. **🔚 Sentence Ending Naturalness**
@@ -67,14 +67,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, natural sentence completion
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sentence%20ending%20Unnatural/fine_tuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 5. **📊 Volume Consistency**
@@ -84,14 +84,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Stable, consistent audio levels
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Sometimes%20high,%20sometimes%20low/output_100_epoch.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 6. **✂️ Word Cutting Issues**
@@ -101,14 +101,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Complete, uninterrupted speech
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/Words%20cut%20off%20in%20mid-sentence/finetuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 #### 7. **📖 Continuous Reading Flow**
@@ -118,14 +118,14 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/continuos reading/base_model.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/continuos reading/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/base_model.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/continuos%20reading/base_model.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, continuous narration
 <audio controls preload="metadata">
   <source src="Proble resolved by finetuning/continuos reading/fine_tuned.mp3" type="audio/mpeg">
   <source src="Proble resolved by finetuning/continuos reading/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/fine_tuned.mp3" target="_blank">Play audio</a>
+<a href="https://raw.githubusercontent.com/EMTIAZ-RUET/bangladeshi-bangla-tts-finetuning/main/Proble%20resolved%20by%20finetuning/continuos%20reading/fine_tuned.mp3" target="_blank">▶️ Play (MP3)</a>
 </audio>
 
 ### 🏆 **Transformation Summary**
