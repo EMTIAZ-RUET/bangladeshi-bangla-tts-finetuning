@@ -13,105 +13,105 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 **Text:** *অনুমোদিতভাবে ছুটি নেওয়া শৃঙ্খলাভঙ্গ হিসেবে গণ্য হয় এবং এধরনের আচরণের জন্য প্রশাসনিক ব্যবস্থা নেওয়া হতে পারে।*
 
 **🔴 Base Model (Before):** Poor pronunciation of complex Bangla words
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Pronounciation/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Clear, accurate pronunciation
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Pronounciation/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Pronounciation/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 2. **❓ Statement vs Question Tone Recognition**
 **Text:** *তোমার জীবনের এমন একটি ঘটনা কি আছে যা তোমার চিন্তাধারা, বিশ্বাস বা ভবিষ্যৎ পরিকল্পনায় গভীর প্রভাব ফেলেছে?*
 
 **🔴 Base Model (Before):** Cannot distinguish question intonation
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Perfect question tone and inflection
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Cannot distinguish between statement and question tone/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 3. **💬 Domain-Specific Conversational Tone**
 **Text:** *ছুটি গ্রহণের ক্ষেত্রে প্রত্যেক কর্মীরই উচিৎ প্রতিষ্ঠানের নির্ধারিত নিয়ম অনুসরণ করা এবং পূর্বানুমতি নিয়ে আবেদন করা।*
 
 **🔴 Base Model (Before):** Robotic, formal tone
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Natural conversational flow  
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Domain-specific conversational tone/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 4. **🔚 Sentence Ending Naturalness**
 **Text:** *সময়কে সম্মান করো, কারণ একবার হারিয়ে গেলে তা আর কখনো ফিরে আসে না।*
 
 **🔴 Base Model (Before):** Abrupt, unnatural endings
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, natural sentence completion
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sentence ending Unnatural/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 5. **📊 Volume Consistency**
 **Text:** *জীবনে সফলতা অর্জন করতে হলে ধৈর্য এবং পরিশ্রমের কোনো বিকল্প নেই। প্রতিটি মানুষ নিজের পথে চলার সময় বিভিন্ন প্রতিবন্ধকতার সম্মুখীন হয়, তবে সেগুলি মোকাবিলা করার ক্ষমতা এবং মনোবলই একজন মানুষের প্রকৃত শক্তি।*
 
 **🔴 Base Model (Before):** Inconsistent volume levels
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Stable, consistent audio levels
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Sometimes high, sometimes low/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 6. **✂️ Word Cutting Issues**
 **Text:** *আমি গতকাল বিকেলে যখন বাসা থেকে বেরিয়ে বইমেলায় যাচ্ছিলাম, তখন হঠাৎ করে আকাশ মেঘে ঢেকে যায়।*
 
 **🔴 Base Model (Before):** Words cut off mid-sentence
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Complete, uninterrupted speech
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/Words cut off in mid-sentence/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 7. **📖 Continuous Reading Flow**
 **Text:** *যেকোনো সিদ্ধান্ত নেওয়ার আগে, চিন্তা করো, পরামর্শ নাও, ভেবেচিন্তে পদক্ষেপ নাও, এবং ফলাফল সম্পর্কে আগে থেকেই ধারণা রাখো।*
 
 **🔴 Base Model (Before):** Choppy, disconnected reading
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/continuos reading/base_model.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/base_model.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/base_model.wav" target="_blank">Play audio</a>
 </audio>
 
 **✅ Fine-tuned Model (After):** Smooth, continuous narration
-<audio controls>
+<audio controls preload="metadata">
   <source src="Proble resolved by finetuning/continuos reading/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/fine_tuned.wav">Download audio</a>
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/continuos reading/fine_tuned.wav" target="_blank">Play audio</a>
 </audio>
 
 ### 🏆 **Transformation Summary**
@@ -133,10 +133,11 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 > **Don't just read about the improvements - HEAR them!**  
 > Each audio comparison above demonstrates the remarkable transformation achieved through our fine-tuning process.  
 > 
-> **🔊 Click on the audio links** to experience the dramatic difference between:  
+> **🔊 Click the PLAY button on each audio player** to experience the dramatic difference between:  
 > ❌ **Base Model** (problematic, robotic speech)  
 > ✅ **Fine-tuned Model** (natural, human-like speech)  
 > 
+> **Audio players are embedded above** - just click the ▶️ play button to listen instantly!  
 > **This is what makes our project special** - the audible proof of transformation!
 
 ---
