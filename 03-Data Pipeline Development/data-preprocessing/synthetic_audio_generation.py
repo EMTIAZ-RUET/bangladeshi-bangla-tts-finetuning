@@ -4,7 +4,7 @@ import requests
 
 # GCP Configuration
 GCP_API_KEY = ""
-VOICE_NAME = "bn-IN-Chirp3-HD-Puck"  # Specific Bengali voice requested
+VOICE_NAME = "bn-Bangladesh-Chirp3-HD-Puck"  # Specific Bengali voice requested
 
 # Create output directory
 output_dir = "output_audio"
@@ -54,7 +54,7 @@ with open("testMetaData.txt", 'r', encoding='utf-8') as file:
             payload = {
                 "input": {"text": text_to_convert},
                 "voice": {
-                    "languageCode": "bn-IN",
+                    "languageCode": "bn-Bangladesh",
                     "name": VOICE_NAME
                 },
                 "audioConfig": {
