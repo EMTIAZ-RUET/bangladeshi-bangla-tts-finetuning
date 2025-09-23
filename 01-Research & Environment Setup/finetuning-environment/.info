@@ -1,0 +1,8 @@
+# Fine-tuning environment setup
+
+This folder contains:
+- Google Colab or Kaggle environment setup scripts
+- Core package installation configurations (torch, torchvision, torchaudio, coqui-tts)
+- GPU availability and memory constraint testing scripts
+- Development environment configuration and optimization
+- Project dependencies and virtual environment setup
