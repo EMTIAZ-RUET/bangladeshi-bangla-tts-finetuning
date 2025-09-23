@@ -10,12 +10,6 @@ This directory contains training logs from the Bangladeshi Bangla TTS model fine
 - **`finetune 4.md`** - Fourth fine-tuning experiment logs
 - **`finetune long 3.md`** - Extended third fine-tuning session logs
 
-### Source Files (ODT Format)
-- **`Finetunelog.odt`** - Original training log (LibreOffice format)
-- **`finetunelog2.odt`** - Original second session log
-- **`finetune 4.odt`** - Original fourth experiment log
-- **`finetune long 3.odt`** - Original extended third session log
-
 ## Log Contents
 
 Each training log contains:
@@ -36,11 +30,11 @@ Each training log contains:
 
 ## Usage
 
-The markdown files (`.md`) are optimized for viewing on GitHub and provide the same content as the original ODT files but in a more accessible format for version control and collaborative review.
+The markdown files (`.md`) are optimized for viewing on GitHub and provide excellent readability for version control and collaborative review.
 
 ## File Conversion
 
-Original ODT files were converted to Markdown using a custom Python script (`odt_to_md.py`) that extracts text content from the OpenDocument format and formats it for better readability in GitHub.
+These files were converted from original ODT (OpenDocument Text) format to Markdown using a custom Python script that extracts text content and formats it for better readability in GitHub. The original ODT files have been removed to keep the repository clean while preserving all training log data.
 
 ---
 *These logs document the fine-tuning process for the Bangladeshi Bangla TTS project, providing detailed insights into model performance and training progression.*
