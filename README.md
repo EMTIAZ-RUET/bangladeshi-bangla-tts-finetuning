@@ -80,8 +80,8 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **✅ Fine-tuned Model (After):** Stable, consistent audio levels
 <audio controls preload="metadata">
-  <source src="Proble resolved by finetuning/Sometimes high, sometimes low/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/fine_tuned.wav" target="_blank">Play audio</a>
+  <source src="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.wav" type="audio/wav">
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Sometimes high, sometimes low/output_100_epoch.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 6. **✂️ Word Cutting Issues**
@@ -95,8 +95,8 @@ Our fine-tuning process has successfully addressed critical issues in Bangladesh
 
 **✅ Fine-tuned Model (After):** Complete, uninterrupted speech
 <audio controls preload="metadata">
-  <source src="Proble resolved by finetuning/Words cut off in mid-sentence/fine_tuned.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/fine_tuned.wav" target="_blank">Play audio</a>
+  <source src="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.wav" type="audio/wav">
+  Your browser does not support the audio element. <a href="Proble resolved by finetuning/Words cut off in mid-sentence/finetuned.wav" target="_blank">Play audio</a>
 </audio>
 
 #### 7. **📖 Continuous Reading Flow**
