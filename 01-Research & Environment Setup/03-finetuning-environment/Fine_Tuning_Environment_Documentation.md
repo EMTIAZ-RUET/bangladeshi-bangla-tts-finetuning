@@ -28,12 +28,6 @@
 * **30 GB system RAM** per session.
 * Training used ~5–6 GB, leaving headroom for preprocessing and dataloaders.
 
-### Disk Storage
-
-* **57.6 GB disk** capacity per session.
-* ~2.4 GB used for datasets, checkpoints, and logs.
-* Models/checkpoints were synced to HuggingFace Hub or Kaggle outputs to avoid data loss.
-
 ---
 
 ## Session Constraints
@@ -89,7 +83,6 @@ The fine-tuning environment on Kaggle provided:
 
 * **2 × NVIDIA Tesla T4 GPUs (15 GB VRAM each)**
 * **30 GB RAM**
-* **57.6 GB disk space**
 * **12-hour session limit**
 * **~30 GPU hours per week quota**
 
