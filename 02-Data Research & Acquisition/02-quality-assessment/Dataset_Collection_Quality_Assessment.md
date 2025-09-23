@@ -64,4 +64,4 @@ For this fine-tuning task, a **hybrid dataset strategy** was adopted, combining 
 
 ### Reference
 
-* **SUST TTS Corpus**: Shahjalal University of Science and Technology. [Phonetically-Balanced Bangla TTS Corpus](file:///home/bs00728/Downloads/SUST_TTS_Corpus_A_phonetically-balanced_corpus_for.pdf)
+* **SUST TTS Corpus**: Shahjalal University of Science and Technology. [Phonetically-Balanced Bangla TTS Corpus](./SUST_TTS_Corpus_A_phonetically-balanced_corpus_for.pdf)
