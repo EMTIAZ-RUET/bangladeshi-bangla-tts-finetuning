@@ -1,7 +1,0 @@
-# Audio feature extraction
-
-This folder contains:
-- MFCC, mel-spectrogram, and pitch feature extraction implementation
-- Speaker embedding extraction pipeline
-- Accent similarity measurement tools
-- Feature extraction testing on sample data
