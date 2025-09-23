@@ -1,4 +1,4 @@
-# Pruning Neural Networks
+# Pruning VITS TTS Neural Networks
 
 Pruning is a model optimization technique that reduces the size of a neural network by removing unnecessary parameters. This process helps in improving the efficiency of the model without significantly affecting its performance.
 
@@ -13,8 +13,8 @@ Pruning involves identifying and removing less important weights or neurons from
 
 ---
 
-## Why Prune the Model?
-Pruning is particularly useful for deploying models on resource-constrained devices, such as mobile phones or embedded systems. By reducing the number of parameters, pruning:
+## Why Prune the VITS TTS Model?
+Pruning is particularly useful for deploying VITS TTS models on resource-constrained devices, such as mobile phones or embedded systems. By reducing the number of parameters, pruning:
 
 1. **Speeds Up Inference**: Smaller models require fewer computations.
 2. **Reduces Storage Requirements**: Pruned models take up less disk space.
@@ -22,10 +22,10 @@ Pruning is particularly useful for deploying models on resource-constrained devi
 
 ---
 
-## Steps to Prune a Model
+## Steps to Prune the VITS TTS Model
 
 ### 1. Identify Prunable Layers
-Not all layers in a neural network are suitable for pruning. Typically, fully connected and convolutional layers are pruned.
+Not all layers in the VITS TTS model are suitable for pruning. Typically, fully connected and convolutional layers are pruned.
 
 ### 2. Apply Pruning
 Use a pruning method, such as L1 unstructured pruning, to remove less important weights. This can be done globally (across the entire model) or locally (within specific layers).
@@ -38,32 +38,32 @@ Save the pruned model and its configuration for deployment.
 
 ---
 
-## Example: Pruning a ResNet Model
+## Example: Pruning the VITS TTS Model
 
-The following Python script demonstrates how to prune a ResNet-18 model using PyTorch:
+The following Python script demonstrates how to prune a VITS TTS model using PyTorch:
 
 ```python
 import torch
 import torch.nn.utils.prune as prune
-from torchvision.models import resnet18
+from vits_model import VITSModel
 
-# Load a pre-trained ResNet-18 model
-model = resnet18(pretrained=True)
+# Load the VITS TTS model
+model = VITSModel()
 
-# Define the pruning method
+# Apply pruning
 parameters_to_prune = []
 for module in model.modules():
-    if isinstance(module, torch.nn.Conv2d) or isinstance(module, torch.nn.Linear):
+    if isinstance(module, torch.nn.Conv1d) or isinstance(module, torch.nn.Linear):
         parameters_to_prune.append((module, 'weight'))
 
 prune.global_unstructured(
     parameters_to_prune,
     pruning_method=prune.L1Unstructured,
-    amount=0.3,  # Prune 30% of the weights
+    amount=0.3,
 )
 
 # Save the pruned model
-torch.save(model.state_dict(), "pruned_model.pth")
+torch.save(model.state_dict(), "pruned_vits_model.pth")
 ```
 
 ---

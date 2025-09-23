@@ -1,7 +1,7 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
 
-class DummyDataset(Dataset):
+class VITSDataset(Dataset):
     def __init__(self, data):
         self.data = data
 
@@ -11,9 +11,9 @@ class DummyDataset(Dataset):
     def __getitem__(self, idx):
         return self.data[idx]
 
-def collate_fn(batch):
+def vits_collate_fn(batch):
     """
-    Custom collate function to handle variable-length sequences.
+    Custom collate function for VITS TTS to handle variable-length sequences.
 
     Args:
         batch: A list of data samples.
@@ -28,10 +28,10 @@ def collate_fn(batch):
     return torch.tensor(padded_batch)
 
 if __name__ == "__main__":
-    # Example usage
+    # Example usage for VITS TTS
     data = [[1, 2, 3], [4, 5], [6]]  # Variable-length sequences
-    dataset = DummyDataset(data)
-    dataloader = DataLoader(dataset, batch_size=2, collate_fn=collate_fn)
+    dataset = VITSDataset(data)
+    dataloader = DataLoader(dataset, batch_size=2, collate_fn=vits_collate_fn)
 
     for batch in dataloader:
-        print("Padded Batch:", batch)
+        print("Padded Batch for VITS:", batch)

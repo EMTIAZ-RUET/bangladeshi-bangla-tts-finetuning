@@ -1,12 +1,12 @@
 import torch
 import torch.nn.utils.prune as prune
 
-def apply_pruning(model, amount=0.2):
+def apply_pruning_vits(model, amount=0.2):
     """
-    Apply global unstructured pruning to the model.
+    Apply global unstructured pruning to the VITS TTS model.
 
     Args:
-        model: The PyTorch model to be pruned.
+        model: The VITS TTS model to be pruned.
         amount: The proportion of weights to prune globally.
 
     Returns:
@@ -15,7 +15,7 @@ def apply_pruning(model, amount=0.2):
     parameters_to_prune = []
 
     for module in model.modules():
-        if isinstance(module, torch.nn.Conv2d) or isinstance(module, torch.nn.Linear):
+        if isinstance(module, torch.nn.Conv1d) or isinstance(module, torch.nn.Linear):
             parameters_to_prune.append((module, 'weight'))
 
     prune.global_unstructured(
@@ -28,12 +28,12 @@ def apply_pruning(model, amount=0.2):
 
 if __name__ == "__main__":
     # Example usage
-    from torchvision.models import resnet18
+    from vits_model import VITSModel  # Replace with the actual VITS model import
 
-    model = resnet18(pretrained=True)
-    print("Model before pruning:")
+    model = VITSModel()
+    print("VITS Model before pruning:")
     print(model)
 
-    pruned_model = apply_pruning(model, amount=0.3)
-    print("Model after pruning:")
+    pruned_model = apply_pruning_vits(model, amount=0.3)
+    print("VITS Model after pruning:")
     print(pruned_model)
