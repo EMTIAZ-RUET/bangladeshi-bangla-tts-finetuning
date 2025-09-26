@@ -1,0 +1,14 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+websockets==12.0
+soundfile==0.12.1
+torch==2.6.0
+torchaudio==2.6.0
+tts==0.22.0
+bangla==0.0.2
+bnnumerizer==0.0.2
+bnunicodenormalizer==0.0.7
+huggingface-hub==0.26.2
+numpy==1.24.3
+pysbd==0.3.4
+python-dotenv==1.0.1
