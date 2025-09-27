@@ -182,26 +182,6 @@ The Docker deployment follows these steps:
 - **Performance Optimization:** Efficient model deployment
 - **Comprehensive Evaluation:** Thorough quality assessment
 
-## 📊 Data Sources
-
-- **OpenSLR 53:** Bangladeshi Bangla speech corpus
-- **Common Voice Bangla:** Community-contributed speech
-- **Bengali.AI Datasets:** Additional language resources
-
-## 🛠️ Technical Components
-
-- **Deep Learning:** PyTorch ecosystem
-- **Audio Processing:** Comprehensive tools
-- **Optimization:** Quantization, pruning, caching
-- **Evaluation:** Quality assessment metrics
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to your branch
-5. Create a Pull Request
 
 ## 📄 License
 
