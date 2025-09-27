@@ -183,10 +183,6 @@ The Docker deployment follows these steps:
 - **Comprehensive Evaluation:** Thorough quality assessment
 
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 📞 Contact
 
 For questions or collaboration:
