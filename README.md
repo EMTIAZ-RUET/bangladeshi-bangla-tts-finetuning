@@ -52,27 +52,40 @@ This project demonstrates the revolutionary power of fine-tuning TTS models spec
 bangladeshi-bangla-tts-finetuning/
 ├── 01-Research & Environment Setup/      # Research and setup phase
 │   ├── 01-model-selection/              # TTS model analysis and selection
-│   ├── 02-architecture-analysis/        # Architecture studies
+│   ├── 02-architecture-analysis/        # VITS vs XTTS architecture studies
 │   └── 03-finetuning-environment/       # Environment configuration
 ├── 02-Data Research & Acquisition/      # Data collection phase
 │   ├── 01-dataset-collection/           # Dataset organization
 │   ├── 02-quality-assessment/           # Quality validation
-│   └── 03-accent-investigation/         # Phonetic analysis
+│   └── 03-accent-investigation/         # Bangla accent theoretical analysis
 ├── 03-Data Pipeline Development/        # Data processing phase
 │   └── data-preprocessing/              # Audio and text preprocessing
 ├── 04-Finetuning Strategy & Experiments/ # Training phase
-│   ├── 01-finetuning-pipeline/         # Training setup
-│   ├── 02-finetuning-process/          # Execution and monitoring
-│   ├── 03-result-analysis/             # Performance analysis
-│   └── 04-finetuned-logs/              # Training logs
+│   ├── 01-finetuning-pipeline-vits/    # VITS model training setup
+│   ├── 02-finetuning-pipeline-xtts/    # XTTS model training setup
+│   ├── 03-finetuning-process/          # Execution and monitoring
+│   ├── 04-result-analysis/             # Performance analysis
+│   └── 05-finetuned-logs/              # Training logs and results
 ├── 05-Optimization/                     # Optimization phase
 │   ├── 01-quantization/                # Model quantization
 │   ├── 02-pruning/                     # Model pruning
 │   ├── 03-caching-streaming/           # Optimization strategies
 │   └── 04-batching-padding/            # Performance tuning
 ├── 06-Deployment/                       # Deployment phase
-│   └── deployment-planning/             # Production setup and deployment
-└── Proble resolved by finetuning/      # Audio evidence
+│   └── deployment-planning/             # AWS deployment strategy
+├── text-to-speech-app/                 # 🎤 Complete TTS Application
+│   ├── backend/                        # FastAPI backend with VITS model
+│   │   ├── models/                     # Fine-tuned model files (excluded)
+│   │   ├── utils/                      # TTS processing utilities
+│   │   ├── Dockerfile                  # Backend containerization
+│   │   └── main.py                     # FastAPI application
+│   ├── frontend/                       # React frontend application
+│   │   ├── src/                        # React components and logic
+│   │   ├── Dockerfile                  # Frontend containerization
+│   │   └── package.json                # Node.js dependencies
+│   ├── docker-compose.yml              # Multi-container orchestration
+│   └── README.md                       # Application-specific documentation
+└── Proble resolved by finetuning/      # 🔊 Audio evidence showcase
     ├── Cannot distinguish between statement and question tone/
     ├── Domain-specific conversational tone/
     ├── Pronounciation/
