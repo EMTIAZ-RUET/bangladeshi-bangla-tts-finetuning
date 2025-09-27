@@ -86,7 +86,7 @@ bangladeshi-bangla-tts-finetuning/
 
 ### Prerequisites
 - Python 3.8+
-- CUDA-capable GPU (recommended)
+- CUDA-capable GPU with 24GB VRAM (recommended for optimal performance)
 - Git for version control
 - Sufficient storage for datasets and models
 

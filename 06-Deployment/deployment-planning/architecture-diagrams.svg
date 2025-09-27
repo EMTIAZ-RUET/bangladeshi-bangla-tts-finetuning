@@ -1,0 +1,183 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 24px Arial; fill: #2c3e50; text-anchor: middle; }
+      .subtitle { font: bold 16px Arial; fill: #34495e; text-anchor: middle; }
+      .label { font: 12px Arial; fill: #2c3e50; text-anchor: middle; }
+      .small-label { font: 10px Arial; fill: #7f8c8d; text-anchor: middle; }
+      .aws-orange { fill: #ff9900; stroke: #e67e22; stroke-width: 2; }
+      .aws-blue { fill: #146eb4; stroke: #2980b9; stroke-width: 2; }
+      .aws-green { fill: #7aa116; stroke: #27ae60; stroke-width: 2; }
+      .aws-red { fill: #d13212; stroke: #e74c3c; stroke-width: 2; }
+      .aws-purple { fill: #9d5aa8; stroke: #8e44ad; stroke-width: 2; }
+      .connection { stroke: #34495e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke-dasharray: 5,5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="30" class="title">Simplified AWS TTS Deployment Architecture</text>
+  <text x="600" y="55" class="subtitle">Docker + Kubernetes + AWS for Million Users</text>
+  
+  <!-- Internet/Users -->
+  <circle cx="100" cy="120" r="40" class="aws-blue"/>
+  <text x="100" y="120" class="label" fill="white">Global</text>
+  <text x="100" y="135" class="label" fill="white">Users</text>
+  <text x="100" y="170" class="small-label">1M+ Concurrent</text>
+  
+  <!-- CloudFront CDN -->
+  <rect x="220" y="90" width="80" height="60" rx="10" class="aws-orange"/>
+  <text x="260" y="115" class="label" fill="white">CloudFront</text>
+  <text x="260" y="130" class="label" fill="white">CDN</text>
+  <text x="260" y="165" class="small-label">Static Assets Only</text>
+  
+  <!-- Application Load Balancer -->
+  <rect x="380" y="90" width="100" height="80" rx="10" class="aws-purple"/>
+  <text x="430" y="120" class="label" fill="white">Application</text>
+  <text x="430" y="135" class="label" fill="white">Load Balancer</text>
+  <text x="430" y="150" class="label" fill="white">(ALB)</text>
+  <text x="430" y="185" class="small-label">SSL + Health Checks</text>
+  
+  <!-- EKS Kubernetes Cluster -->
+  <rect x="550" y="60" width="180" height="160" rx="10" class="aws-blue"/>
+  <text x="640" y="85" class="label" fill="white">Amazon EKS Cluster</text>
+  <text x="640" y="100" class="small-label" fill="white">Kubernetes Orchestration</text>
+  
+  <!-- Kubernetes Pods -->
+  <rect x="570" y="120" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="595" y="135" class="small-label">TTS Pod</text>
+  <text x="595" y="148" class="small-label">(Docker)</text>
+  
+  <rect x="630" y="120" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="655" y="135" class="small-label">TTS Pod</text>
+  <text x="655" y="148" class="small-label">(Docker)</text>
+  
+  <rect x="690" y="120" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="715" y="135" class="small-label">TTS Pod</text>
+  <text x="715" y="148" class="small-label">(Docker)</text>
+  
+  <rect x="570" y="165" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="595" y="180" class="small-label">TTS Pod</text>
+  <text x="595" y="193" class="small-label">(Docker)</text>
+  
+  <rect x="630" y="165" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="655" y="180" class="small-label">TTS Pod</text>
+  <text x="655" y="193" class="small-label">(Docker)</text>
+  
+  <rect x="690" y="165" width="50" height="35" rx="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+  <text x="715" y="180" class="small-label">TTS Pod</text>
+  <text x="715" y="193" class="small-label">(Docker)</text>
+  
+  <text x="640" y="235" class="small-label">HPA: 5-200 Pods</text>
+  
+  <!-- S3 Storage -->
+  <rect x="760" y="60" width="100" height="80" rx="10" class="aws-green"/>
+  <text x="810" y="90" class="label" fill="white">S3 Storage</text>
+  <text x="810" y="110" class="label" fill="white">TTS Models</text>
+  <text x="810" y="125" class="label" fill="white">997MB Model</text>
+  <text x="810" y="155" class="small-label">pytorch_model.pth</text>
+  
+  <!-- CloudWatch -->
+  <rect x="760" y="160" width="100" height="60" rx="10" class="aws-purple"/>
+  <text x="810" y="185" class="label" fill="white">CloudWatch</text>
+  <text x="810" y="200" class="label" fill="white">Monitoring</text>
+  <text x="810" y="235" class="small-label">Pod Metrics</text>
+  
+  <!-- Horizontal Pod Autoscaler -->
+  <rect x="880" y="60" width="140" height="120" rx="10" fill="none" stroke="#e74c3c" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="950" y="85" class="label" fill="#e74c3c">Horizontal Pod</text>
+  <text x="950" y="100" class="label" fill="#e74c3c">Autoscaler (HPA)</text>
+  <text x="950" y="125" class="small-label">Min: 5 Pods</text>
+  <text x="950" y="140" class="small-label">Max: 200 Pods</text>
+  <text x="950" y="155" class="small-label">Target: 70% CPU</text>
+  <text x="950" y="170" class="small-label">Target: 80% Memory</text>
+  
+  <!-- Cluster Autoscaler -->
+  <rect x="880" y="190" width="140" height="80" rx="10" fill="none" stroke="#27ae60" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="950" y="215" class="label" fill="#27ae60">Cluster Autoscaler</text>
+  <text x="950" y="235" class="small-label">Min: 3 Nodes</text>
+  <text x="950" y="250" class="small-label">Max: 50 Nodes</text>
+  <text x="950" y="265" class="small-label">p3.2xlarge (24GB VRAM)</text>
+  
+  <!-- Connections -->
+  <line x1="140" y1="120" x2="220" y2="120" class="connection"/>
+  <line x1="300" y1="120" x2="380" y2="120" class="connection"/>
+  <line x1="480" y1="130" x2="550" y2="130" class="connection"/>
+  <line x1="730" y1="140" x2="760" y2="120" class="connection"/>
+  <line x1="730" y1="180" x2="760" y2="190" class="connection dashed"/>
+  <line x1="880" y1="120" x2="730" y2="140" class="connection dashed"/>
+  <line x1="880" y1="230" x2="730" y2="180" class="connection dashed"/>
+  
+  <!-- Multi-Region Indicator -->
+  <rect x="50" y="350" width="1100" height="200" rx="15" fill="none" stroke="#3498db" stroke-width="3" stroke-dasharray="15,10"/>
+  <text x="600" y="375" class="subtitle" fill="#3498db">Multi-Region Deployment Strategy</text>
+  
+  <!-- Region 1 -->
+  <rect x="80" y="400" width="300" height="120" rx="10" fill="#ecf0f1" stroke="#95a5a6"/>
+  <text x="230" y="425" class="label">Primary Region: US-East-1</text>
+  <text x="230" y="445" class="small-label">• Main EKS cluster</text>
+  <text x="230" y="460" class="small-label">• 50 nodes, 200 pods max</text>
+  <text x="230" y="475" class="small-label">• Primary model storage (S3)</text>
+  <text x="230" y="490" class="small-label">• CloudWatch monitoring</text>
+  <text x="230" y="505" class="small-label">• Handles 60% traffic</text>
+  
+  <!-- Region 2 -->
+  <rect x="420" y="400" width="300" height="120" rx="10" fill="#ecf0f1" stroke="#95a5a6"/>
+  <text x="570" y="425" class="label">Secondary Region: AP-South-1</text>
+  <text x="570" y="445" class="small-label">• Independent EKS cluster</text>
+  <text x="570" y="460" class="small-label">• Serves Asian users</text>
+  <text x="570" y="475" class="small-label">• S3 cross-region replication</text>
+  <text x="570" y="490" class="small-label">• Latency-based routing</text>
+  <text x="570" y="505" class="small-label">• Handles 25% traffic</text>
+  
+  <!-- Region 3 -->
+  <rect x="760" y="400" width="300" height="120" rx="10" fill="#ecf0f1" stroke="#95a5a6"/>
+  <text x="910" y="425" class="label">Tertiary Region: EU-West-1</text>
+  <text x="910" y="445" class="small-label">• Independent EKS cluster</text>
+  <text x="910" y="460" class="small-label">• Serves European users</text>
+  <text x="910" y="475" class="small-label">• GDPR compliance</text>
+  <text x="910" y="490" class="small-label">• Regional failover</text>
+  <text x="910" y="505" class="small-label">• Handles 15% traffic</text>
+  
+  <!-- Performance Metrics -->
+  <rect x="50" y="580" width="1100" height="180" rx="15" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="600" y="605" class="subtitle">Kubernetes Performance Targets for Million Users</text>
+  
+  <!-- Metrics Grid -->
+  <rect x="80" y="620" width="200" height="80" rx="5" fill="white" stroke="#ced4da"/>
+  <text x="180" y="640" class="label">Response Time</text>
+  <text x="180" y="655" class="small-label">Average: &lt; 2 seconds</text>
+  <text x="180" y="670" class="small-label">TTS inference: &lt; 1.5s</text>
+  <text x="180" y="685" class="small-label">Pod startup: &lt; 30s</text>
+  
+  <rect x="300" y="620" width="200" height="80" rx="5" fill="white" stroke="#ced4da"/>
+  <text x="400" y="640" class="label">Pod Scaling</text>
+  <text x="400" y="655" class="small-label">Min: 5 pods</text>
+  <text x="400" y="670" class="small-label">Max: 200 pods</text>
+  <text x="400" y="685" class="small-label">Per pod: 5K requests</text>
+  
+  <rect x="520" y="620" width="200" height="80" rx="5" fill="white" stroke="#ced4da"/>
+  <text x="620" y="640" class="label">Availability</text>
+  <text x="620" y="655" class="small-label">Target: 99.9% uptime</text>
+  <text x="620" y="670" class="small-label">Pod health checks</text>
+  <text x="620" y="685" class="small-label">Multi-AZ deployment</text>
+  
+  <rect x="740" y="620" width="200" height="80" rx="5" fill="white" stroke="#ced4da"/>
+  <text x="840" y="640" class="label">Auto Scaling</text>
+  <text x="840" y="655" class="small-label">HPA: &lt; 60 seconds</text>
+  <text x="840" y="670" class="small-label">Cluster: &lt; 3 minutes</text>
+  <text x="840" y="685" class="small-label">CPU/Memory based</text>
+  
+  <rect x="960" y="620" width="180" height="80" rx="5" fill="white" stroke="#ced4da"/>
+  <text x="1050" y="640" class="label">Cost Efficiency</text>
+  <text x="1050" y="655" class="small-label">Monthly: $9K-15K</text>
+  <text x="1050" y="670" class="small-label">Per request: &lt; $0.005</text>
+  <text x="1050" y="685" class="small-label">Spot instances: 70%</text>
+  
+  <!-- Optimization Strategy -->
+  <text x="100" y="730" class="small-label">Container Strategy: Docker multi-stage builds, model quantization, warm-up on startup, 24GB VRAM GPU acceleration</text>
+  <text x="100" y="745" class="small-label">Kubernetes: HPA + Cluster Autoscaler, GPU resource limits, readiness/liveness probes, pod disruption budgets</text>
+</svg>

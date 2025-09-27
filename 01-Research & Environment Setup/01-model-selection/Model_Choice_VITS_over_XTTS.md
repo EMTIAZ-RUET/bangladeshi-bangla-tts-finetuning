@@ -4,6 +4,15 @@ There is currently **no publicly available pretrained Bangla XTTS model**, which
 
 For this assignment, I have chosen **VITS** instead of **XTTS**. While XTTS is a stronger architecture with advanced zero-shot multilingual capabilities, it is **not practical under the GPU and time constraints** of this task. Below I provide a detailed justification.
 
+## 🚀 **Important Note: Complete Pipeline Documentation**
+
+> 📋 **This document includes comprehensive training pipeline documentation for BOTH architectures:**
+> 
+> - 🎯 **VITS Pipeline**: Complete implementation guide (chosen for current project)
+> - 🔬 **XTTS Pipeline**: Full training methodology and implementation steps
+> 
+> 💡 **Both pipelines are documented** to provide complete technical coverage and future implementation options, despite the practical choice of VITS for the current project constraints.
+
 ---
 
 ## 1. GPU and Compute Constraints
@@ -82,5 +91,3 @@ I selected **VITS** over XTTS because of **realistic compute and time constraint
 * VITS is **lightweight, reproducible, and already has Bangla-pretrained checkpoints**, enabling me to fine-tune effectively on Colab/Kaggle and focus on the assignment's goals: accent adaptation, evaluation, and deployment.
 
 ---
-
-**Note:** This decision prioritizes practical implementation and reproducibility within the given constraints while still achieving the core objectives of Bangladeshi Bangla TTS fine-tuning.

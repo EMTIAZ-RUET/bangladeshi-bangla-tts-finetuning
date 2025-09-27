@@ -215,14 +215,14 @@ __pycache__/
 venv*/
 env*/
 
-# Docker
-.dockerignore
-Dockerfile*
-docker-compose*.yml
+# Docker (allow Docker files for deployment)
+# .dockerignore
+# Dockerfile*
+# docker-compose*.yml
 
-# Kubernetes
-*.yaml
-*.yml
+# Kubernetes (allow YAML files for configuration)
+# *.yaml
+# *.yml
 
 # Backup files
 *.bak

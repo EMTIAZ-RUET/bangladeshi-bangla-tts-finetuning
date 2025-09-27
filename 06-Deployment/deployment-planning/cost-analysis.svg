@@ -1,0 +1,133 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 24px Arial; fill: #2c3e50; text-anchor: middle; }
+      .subtitle { font: bold 16px Arial; fill: #34495e; text-anchor: middle; }
+      .label { font: 12px Arial; fill: #2c3e50; text-anchor: middle; }
+      .small-label { font: 10px Arial; fill: #7f8c8d; text-anchor: middle; }
+      .cost-label { font: bold 14px Arial; fill: #2c3e50; text-anchor: middle; }
+      .aws-orange { fill: #ff9900; stroke: #e67e22; stroke-width: 2; }
+      .aws-blue { fill: #146eb4; stroke: #2980b9; stroke-width: 2; }
+      .aws-green { fill: #7aa116; stroke: #27ae60; stroke-width: 2; }
+      .aws-red { fill: #d13212; stroke: #e74c3c; stroke-width: 2; }
+      .aws-purple { fill: #9d5aa8; stroke: #8e44ad; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="30" class="title">Simplified Cost Analysis for Million-User TTS Deployment</text>
+  <text x="600" y="55" class="subtitle">Docker + Kubernetes + AWS Cost Breakdown</text>
+  
+  <!-- Cost Breakdown Pie Chart -->
+  <g transform="translate(300, 200)">
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#dee2e6" stroke-width="2"/>
+    
+    <!-- EKS EC2 Instances - 60% -->
+    <path d="M 0,-100 A 100,100 0 1,1 -80.90,58.78 L 0,0 Z" class="aws-blue"/>
+    <text x="-30" y="-30" class="label" fill="white">EKS EC2</text>
+    <text x="-30" y="-15" class="label" fill="white">Instances</text>
+    <text x="-30" y="0" class="label" fill="white">$6,000</text>
+    <text x="-30" y="15" class="label" fill="white">(60%)</text>
+    
+    <!-- Data Transfer - 25% -->
+    <path d="M -80.90,58.78 A 100,100 0 0,1 80.90,58.78 L 0,0 Z" class="aws-orange"/>
+    <text x="0" y="75" class="label" fill="white">Data Transfer</text>
+    <text x="0" y="90" class="label" fill="white">$2,500</text>
+    <text x="0" y="105" class="label" fill="white">(25%)</text>
+    
+    <!-- Other Services - 15% -->
+    <path d="M 80.90,58.78 A 100,100 0 0,1 0,-100 L 0,0 Z" class="aws-green"/>
+    <text x="40" y="-20" class="label" fill="white">Other</text>
+    <text x="40" y="-5" class="label" fill="white">Services</text>
+    <text x="40" y="10" class="label" fill="white">$1,500</text>
+    <text x="40" y="25" class="label" fill="white">(15%)</text>
+    
+    <text x="0" y="130" class="cost-label">Total: $10,000/month</text>
+    <text x="0" y="150" class="small-label">For 1 Million Active Users</text>
+  </g>
+  
+  <!-- Detailed Cost Breakdown -->
+  <rect x="500" y="80" width="650" height="300" rx="10" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="825" y="105" class="subtitle">Detailed Monthly Costs</text>
+  
+  <!-- Service costs table -->
+  <rect x="520" y="120" width="300" height="25" fill="#e9ecef"/>
+  <text x="550" y="135" class="label">Service</text>
+  <text x="720" y="135" class="label">Configuration</text>
+  <text x="800" y="135" class="label">Monthly Cost</text>
+  
+  <!-- EKS Cluster -->
+  <rect x="520" y="145" width="300" height="20" fill="white"/>
+  <circle cx="535" cy="155" r="5" class="aws-blue"/>
+  <text x="550" y="160" class="small-label">EKS Cluster</text>
+  <text x="720" y="160" class="small-label">Control plane</text>
+  <text x="800" y="160" class="small-label">$150</text>
+  
+  <!-- EC2 Instances -->
+  <rect x="520" y="165" width="300" height="20" fill="#f8f9fa"/>
+  <circle cx="535" cy="175" r="5" class="aws-blue"/>
+  <text x="550" y="180" class="small-label">EC2 Instances</text>
+  <text x="720" y="180" class="small-label">50x p3.2xlarge (24GB VRAM, 50% spot)</text>
+  <text x="800" y="180" class="small-label">$10,000</text>
+  
+  <!-- Application Load Balancer -->
+  <rect x="520" y="185" width="300" height="20" fill="white"/>
+  <circle cx="535" cy="195" r="5" class="aws-purple"/>
+  <text x="550" y="200" class="small-label">Load Balancer</text>
+  <text x="720" y="200" class="small-label">Application LB</text>
+  <text x="800" y="200" class="small-label">$25</text>
+  
+  <!-- S3 Storage -->
+  <rect x="520" y="205" width="300" height="20" fill="#f8f9fa"/>
+  <circle cx="535" cy="215" r="5" class="aws-green"/>
+  <text x="550" y="220" class="small-label">S3 Storage</text>
+  <text x="720" y="220" class="small-label">Model storage (997MB)</text>
+  <text x="800" y="220" class="small-label">$200</text>
+  
+  <!-- Data Transfer -->
+  <rect x="520" y="225" width="300" height="20" fill="white"/>
+  <circle cx="535" cy="235" r="5" class="aws-orange"/>
+  <text x="550" y="240" class="small-label">Data Transfer</text>
+  <text x="720" y="240" class="small-label">Cross-AZ + Internet</text>
+  <text x="800" y="240" class="small-label">$2,000</text>
+  
+  <!-- CloudWatch -->
+  <rect x="520" y="245" width="300" height="20" fill="#f8f9fa"/>
+  <circle cx="535" cy="255" r="5" class="aws-purple"/>
+  <text x="550" y="260" class="small-label">CloudWatch</text>
+  <text x="720" y="260" class="small-label">Logs + Metrics</text>
+  <text x="800" y="260" class="small-label">$300</text>
+  
+  <!-- EBS Storage -->
+  <rect x="520" y="265" width="300" height="20" fill="white"/>
+  <circle cx="535" cy="275" r="5" class="aws-green"/>
+  <text x="550" y="280" class="small-label">EBS Storage</text>
+  <text x="720" y="280" class="small-label">GP3 SSD for nodes</text>
+  <text x="800" y="280" class="small-label">$500</text>
+  
+  <!-- NAT Gateway -->
+  <rect x="520" y="285" width="300" height="20" fill="#f8f9fa"/>
+  <circle cx="535" cy="295" r="5" class="aws-orange"/>
+  <text x="550" y="300" class="small-label">NAT Gateway</text>
+  <text x="720" y="300" class="small-label">Multi-AZ</text>
+  <text x="800" y="300" class="small-label">$125</text>
+  
+  <!-- Cost per user -->
+  <rect x="850" y="120" width="280" height="240" rx="10" fill="white" stroke="#ced4da"/>
+  <text x="990" y="145" class="subtitle">Cost Per User Analysis</text>
+  
+  <text x="990" y="170" class="label">Monthly Cost per Active User</text>
+  <text x="990" y="190" class="cost-label">$0.013</text>
+  
+  <text x="990" y="215" class="label">Cost per TTS Request</text>
+  <text x="990" y="235" class="cost-label">$0.005</text>
+  
+  <text x="990" y="260" class="label">Break-even Point</text>
+  <text x="990" y="280" class="cost-label">30,000 Users</text>
+  
+  <text x="990" y="305" class="label">Revenue Target</text>
+  <text x="990" y="325" class="cost-label">$0.02 per request</text>
+  
+  <text x="990" y="350" class="small-label">Profit Margin: 75%</text>
+  
+</svg>
