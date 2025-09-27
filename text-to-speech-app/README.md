@@ -152,7 +152,7 @@ The frontend will be available at `http://localhost:3000`
    - Model will download automatically on first use
    - Ensure stable internet connection for model download
    - Check available disk space (model is ~100MB)
-   - Verify CUDA availability for GPU acceleration (optional)
+   - Verify CUDA availability for GPU acceleration (24GB VRAM recommended)
 
 ## Development
 

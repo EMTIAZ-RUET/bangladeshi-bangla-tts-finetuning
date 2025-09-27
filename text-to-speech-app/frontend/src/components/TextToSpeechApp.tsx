@@ -219,23 +219,6 @@ export const TextToSpeechApp: React.FC = () => {
                   <div className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      id="pretrained"
-                      name="model"
-                      value="pretrained"
-                      checked={selectedModel === 'pretrained'}
-                      onChange={(e) => setSelectedModel(e.target.value)}
-                      className="w-4 h-4 text-blue-600"
-                    />
-                    <label htmlFor="pretrained" className="text-sm font-medium text-gray-900">
-                      Pre-trained Model (মূল মডেল)
-                    </label>
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="radio"
                       id="finetuned"
                       name="model"
                       value="finetuned"
@@ -247,6 +230,29 @@ export const TextToSpeechApp: React.FC = () => {
                       Fine-tuned Model (আপনার কাস্টম মডেল)
                     </label>
                   </div>
+                  <p className="text-xs text-gray-500 ml-6">
+                    Your custom trained model from Hugging Face
+                  </p>
+                </div>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      id="pretrained"
+                      name="model"
+                      value="pretrained"
+                      checked={selectedModel === 'pretrained'}
+                      onChange={(e) => setSelectedModel(e.target.value)}
+                      className="w-4 h-4 text-blue-600"
+                    />
+                    <label htmlFor="pretrained" className="text-sm font-medium text-gray-900">
+                      Pre-trained Model (মূল মডেল)
+                    </label>
+                  </div>
+                  <p className="text-xs text-gray-500 ml-6">
+                    Original Coqui TTS pre-trained model
+                  </p>
                 </div>
               </div>
             </div>

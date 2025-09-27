@@ -13,8 +13,14 @@ from .config import MODEL_DIRECTORY
 
 class TTS:
     def __init__(self):
-        # Available models configuration
+        # Available models configuration (prioritize Hugging Face for Docker)
         self.available_models = {
+            "huggingface": {
+                "name": "Hugging Face Model (Your Custom Model)",
+                "repo_id": "EMTIAZZ/bangladeshi-bangla-tts-vits",  # Updated with your actual repo
+                "description": "Your custom fine-tuned VITS model from Hugging Face",
+                "type": "huggingface"
+            },
             "finetuned": {
                 "name": "Fine-tuned Model (Your Custom Model)",
                 "folder": "vits-female-finetuned-quantized",
@@ -44,6 +50,11 @@ class TTS:
                 if model_info['type'] == 'local':
                     # Load local fine-tuned model
                     model_path, config_path = self._get_model_paths(model_key)
+                    model = self.model_synthesizer(model_path, config_path)
+                    self.models[model_key] = model
+                elif model_info['type'] == 'huggingface':
+                    # Load Hugging Face model
+                    model_path, config_path = self._download_huggingface_model(model_key)
                     model = self.model_synthesizer(model_path, config_path)
                     self.models[model_key] = model
                 elif model_info['type'] == 'coqui':
@@ -88,13 +99,33 @@ class TTS:
             is_male : if True then uses cloned voice of male speaker,otherwise female speaker is used.
             is_e2e_vits : if True then uses vits model,otherwise glowtts gets used.
         '''
-        # Check if the requested model is available
-        if model_type not in self.models or self.models[model_type] is None:
-            available_models = [k for k, v in self.models.items() if v is not None]
-            raise ValueError(f"Model '{model_type}' not available. Available models: {available_models}")
+        # Map "finetuned" to "huggingface" since they're the same model
+        if model_type == "finetuned":
+            actual_model_type = "huggingface"
+        else:
+            actual_model_type = model_type
+            
+        # Check if the requested model is available, try to load if not
+        if actual_model_type not in self.models or self.models[actual_model_type] is None:
+            # Try to load the model if it failed during startup
+            if actual_model_type == "pretrained":
+                logger.info(f"Attempting to load {actual_model_type} model on demand...")
+                try:
+                    model_info = self.available_models[actual_model_type]
+                    if model_info['type'] == 'coqui':
+                        model = CoquiTTS(model_name=model_info['model_name'])
+                        self.models[actual_model_type] = model
+                        logger.info(f"✅ Successfully loaded {model_info['name']} on demand")
+                except Exception as e:
+                    logger.error(f"❌ Failed to load {actual_model_type} model on demand: {e}")
+            
+            # Final check
+            if actual_model_type not in self.models or self.models[actual_model_type] is None:
+                available_models = [k for k, v in self.models.items() if v is not None]
+                raise ValueError(f"Model '{model_type}' not available. Available models: {available_models}")
         
-        selected_model = self.models[model_type]
-        model_info = self.available_models[model_type]
+        selected_model = self.models[actual_model_type]
+        model_info = self.available_models[actual_model_type]
         logger.info(f"Using {model_info['name']} for TTS")
         
         # Text preprocessing
@@ -118,8 +149,8 @@ class TTS:
         text = self.normalize(text)
         
         # Generate audio based on model type
-        if model_info['type'] == 'local':
-            # Use local fine-tuned model
+        if model_info['type'] in ['local', 'huggingface']:
+            # Use local or Hugging Face fine-tuned model
             sentenceEnders = re.compile('[।!?]')
             sentences = sentenceEnders.split(str(text))
             audio_list = []
@@ -147,7 +178,7 @@ class TTS:
         model_path = os.path.join(local_dir, "pytorch_model.pth")
         
         # Check for different possible config file names
-        possible_config_names = ["config.json", "config_100 epoch.json", "config_100epoch.json"]
+        possible_config_names = ["config.json", "config_finetuned.json", "config_100 epoch.json", "config_100epoch.json"]
         config_path = None
         
         for config_name in possible_config_names:
@@ -168,4 +199,41 @@ class TTS:
         logger.info(f"Config: {config_path}")
         
         return model_path, config_path
+    
+    def _download_huggingface_model(self, model_key):
+        """Download model from Hugging Face Hub."""
+        model_info = self.available_models[model_key]
+        
+        if model_info['type'] != 'huggingface':
+            raise ValueError(f"_download_huggingface_model only works with huggingface models, got {model_info['type']}")
+        
+        repo_id = model_info['repo_id']
+        if not repo_id or repo_id == "your-username/bangladeshi-bangla-tts-vits":
+            raise ValueError(f"Please update the repo_id in the model configuration for {model_key}")
+        
+        logger.info(f"Downloading model from Hugging Face: {repo_id}")
+        
+        try:
+            # Download model to local cache
+            local_dir = snapshot_download(repo_id=repo_id)
+            
+            model_path = os.path.join(local_dir, "pytorch_model.pth")
+            config_path = os.path.join(local_dir, "config.json")
+            
+            # Verify both files exist
+            if not os.path.exists(model_path):
+                raise FileNotFoundError(f"Model file not found in downloaded repo: {model_path}")
+            
+            if not os.path.exists(config_path):
+                raise FileNotFoundError(f"Config file not found in downloaded repo: {config_path}")
+            
+            logger.info(f"Successfully downloaded model from: {repo_id}")
+            logger.info(f"Model: {model_path}")
+            logger.info(f"Config: {config_path}")
+            
+            return model_path, config_path
+            
+        except Exception as e:
+            logger.error(f"Failed to download model from {repo_id}: {e}")
+            raise
     
