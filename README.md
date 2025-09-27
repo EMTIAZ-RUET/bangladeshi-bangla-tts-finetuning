@@ -97,13 +97,6 @@ bangladeshi-bangla-tts-finetuning/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.8+
-- CUDA-capable GPU with 24GB VRAM (recommended for optimal performance)
-- Git for version control
-- Sufficient storage for datasets and models
-- Docker and Docker Compose (for containerized deployment)
-
 ### Setup
 
 1. **Clone the repository:**
