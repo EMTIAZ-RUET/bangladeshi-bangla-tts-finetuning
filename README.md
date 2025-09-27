@@ -181,13 +181,6 @@ The Docker deployment follows these steps:
 3. **Model Loading** (2-3 minutes) - Loads model into memory
 4. **Service Ready** - Application becomes available
 
-### Troubleshooting
-
-- **Slow startup?** This is normal for the first run due to model downloads
-- **Out of memory?** Ensure you have at least 8GB RAM available
-- **Port conflicts?** Modify ports in `docker-compose.yml` if needed
-- **Model download fails?** Check your internet connection and try again
-
 ## 🎯 Key Features
 
 - **Accent Accuracy:** Authentic Bangladeshi Bangla pronunciation
