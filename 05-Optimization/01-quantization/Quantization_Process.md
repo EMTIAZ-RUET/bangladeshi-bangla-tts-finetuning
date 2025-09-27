@@ -72,4 +72,4 @@ Optimized models consume less energy, contributing to greener AI solutions.
 ---
 
 ## Conclusion
-Quantization is a powerful technique for optimizing the VITS TTS model, making it more efficient and accessible for real-world applications. By following the steps outlined in this document, you can successfully quantize the VITS model and deploy it on a wide range of devices without compromising on quality.
+Quantization is a powerful technique for optimizing the VITS TTS model, making it more efficient and accessible for real-world applications.
