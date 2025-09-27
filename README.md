@@ -89,6 +89,7 @@ bangladeshi-bangla-tts-finetuning/
 - CUDA-capable GPU with 24GB VRAM (recommended for optimal performance)
 - Git for version control
 - Sufficient storage for datasets and models
+- Docker and Docker Compose (for containerized deployment)
 
 ### Setup
 
@@ -101,6 +102,78 @@ cd bangladeshi-bangla-tts-finetuning
 2. **Setup environment** following guidelines in `01-Research & Environment Setup/03-finetuning-environment/`
 
 3. **Install dependencies** for your use case
+
+## 🎤 Running the Text-to-Speech Application
+
+### Option 1: Local Development Setup
+
+1. **Navigate to the TTS app directory:**
+```bash
+cd text-to-speech-app
+```
+
+2. **Backend Setup:**
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+3. **Frontend Setup (in a new terminal):**
+```bash
+cd text-to-speech-app/frontend
+npm install
+npm run dev
+```
+
+4. **Access the application:**
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:8000
+
+### Option 2: Docker Deployment (Recommended)
+
+⚠️ **IMPORTANT STARTUP TIME NOTICE** ⚠️
+> **The Docker deployment will take 15+ minutes to start** due to:
+> - Large model downloads from Hugging Face Hub
+> - Model loading and initialization
+> - Container setup and dependency installation
+> 
+> **Please be patient during the first startup!**
+
+1. **Navigate to the TTS app directory:**
+```bash
+cd text-to-speech-app
+```
+
+2. **Start with Docker Compose:**
+```bash
+docker-compose up --build
+```
+
+3. **Monitor the startup process:**
+```bash
+# Watch the logs to see download progress
+docker-compose logs -f backend
+```
+
+4. **Access the application (after startup completes):**
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
+
+### Docker Startup Process
+
+The Docker deployment follows these steps:
+1. **Container Building** (2-3 minutes)
+2. **Model Download** (10-12 minutes) - Downloads fine-tuned VITS model
+3. **Model Loading** (2-3 minutes) - Loads model into memory
+4. **Service Ready** - Application becomes available
+
+### Troubleshooting
+
+- **Slow startup?** This is normal for the first run due to model downloads
+- **Out of memory?** Ensure you have at least 8GB RAM available
+- **Port conflicts?** Modify ports in `docker-compose.yml` if needed
+- **Model download fails?** Check your internet connection and try again
 
 ## 🎯 Key Features
 
