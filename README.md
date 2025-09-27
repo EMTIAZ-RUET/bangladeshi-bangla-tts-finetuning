@@ -185,8 +185,10 @@ The Docker deployment follows these steps:
 ## 📞 Contact
 
 For questions or collaboration:
-- Use GitHub Issues for technical problems
-- Use GitHub Discussions for general questions
+- **Email**: emtiaz4546@gmail.com
+- **Phone**: +880 1765786548
+- **GitHub Issues**: For technical problems
+- **GitHub Discussions**: For general questions
 
 ---
 
