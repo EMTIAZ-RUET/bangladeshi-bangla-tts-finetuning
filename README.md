@@ -127,7 +127,7 @@ npm run dev
 ```
 
 4. **Access the application:**
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:3000
 - Backend API: http://localhost:8000
 
 ### Option 2: Docker Deployment (Recommended)
